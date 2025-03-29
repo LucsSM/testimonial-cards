@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=dark_mode,light_mode"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="script.js" defer></script>
+        <title>Testimonials</title>
+    </head>
+    <body data-theme="">
+        <div class="theme-switch-container">
+            <button id="theme-switch">
+                <span id="light-icon" class="material-symbols-outlined">light_mode</span>
+                <span id="dark-icon" class="material-symbols-outlined">dark_mode</span>
+            </button>
+        </div>
+        <section class="testimonials">
+
+            <!-- testimonial 1 -->
+            <div class="testimonial-ichigo">
+                <div class="ichigo-speech">
+                    <p>
+                        I have Been solving all the project ideas on roadmap.sh and I am surprised how far I have come from where I started.
+                        <br><br>
+                        Highly recommended!
+                    </p>
+                </div>
+                <div class="avatar-intro">
+                    <div>
+                        <img src="avatar.png" alt="user avatar"  width="100" height="100">
+                    </div>
+                    <div>
+                        <h2>Ichigo Kurosaki</h2>
+                        <p>Junior Frontend Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- testimonial 2 -->
+            <div class="testimonial-orchid">
+                <div class="orchid-speech">
+                    <p>
+                        Since starting my career in 2021, I have only followed one resource, roadmap.sh, it truly helped me go from 0 to having a job and changing the fincancial trajectory of my family
+                    </p>
+                </div>
+                <div class="avatar-intro">
+                    <div>
+                        <img src="avatar2.png" alt="user avatar"  width="100" height="100">
+                    </div>
+                    <div>
+                        <h2>Orchid</h2>
+                        <p>Junior Frontend Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- testimonial 3 -->
+            <div class="testimonial-bateman">
+                <img src="avatar3.png" alt="user avatar">
+                <div>
+                    &#11088;&#11088;&#11088;&#11088;&#11088;
+                    <h2>Patrick Bateman</h2>
+                    <h3>Engineering Manager</h3>
+                    <p>I find myself recommending roadmap.sh to all the internees of junior developers. It's a great way to skill up and grow in your career.</p>
+                </div>
+            </div>
+                
+            <!-- testimonial slider -->
+            <div class="testimonial-carousel">
+                <div>
+                    <p id="text"></p>
+                </div>
+                <div class="carousel">
+                        <button onclick="prevSlide()">
+                            <img class="arrow" src="left-arrow.png" alt="">
+                        </button>
+                        <img class="side" id="left" src="avatar.png" alt="">
+                        <img class="center" id="center" src="avatar2.png" alt="">
+                        <img class="side" id="right" src="avatar3.png" alt="">
+                        <button onclick="nextSlide()">
+                            <img class="arrow" src="right-arrow.png" alt="">
+                        </button>
+                </div>
+                <div class="name" id="name"><p>Orchid</p></div>
+            </div>
+        </section>
+    </body>
+</html>
